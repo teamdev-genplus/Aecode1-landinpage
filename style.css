@@ -1,0 +1,1356 @@
+/*Estilos generales*/
+@font-face {
+  font-family: "Ruberoid";
+  src: url(Ruberoid/Ruberoid-Medium.otf);
+}
+
+h1,
+h3,
+h2,
+h5,
+h4,
+h6,
+.nav-link,
+.btn,
+.mi-boton {
+  font-family: "Ruberoid";
+  /*font-family: 'Quicksand', sans-serif;*/
+}
+
+body {
+  width: 100%;
+  margin: 0; /* Esto elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Esto elimina el relleno predeterminado del cuerpo */
+  overflow-x: hidden;
+}
+
+p,
+li {
+  font-family: "Plus Jakarta Sans";
+  /*font-family: 'Mulish';*/
+  font-size: medium;
+}
+
+.btn {
+  font-weight: 600;
+}
+
+.btnText {
+  font-family: "Ruberoid";
+  font-weight: 400;
+  margin-right: 1px;
+}
+
+.close,
+.close2 {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: black;
+  background-color: white;
+  outline: none;
+}
+
+.close:hover,
+.close2:hover {
+  background-color: red;
+  color: white;
+}
+
+/*Estilos de los íconos*/
+.nav-link-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.iconoHeader {
+  font-size: 25px;
+}
+
+.iconos {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-inline: 12px;
+  color: black;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
+}
+
+.icon-text {
+  margin-left: 5px;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-circle-check {
+  padding-right: 12px;
+  font-size: 20px;
+}
+
+.inline-text {
+  display: inline; /* Esto hace que el span sea en línea */
+  margin-left: 5px; /* Ajusta según sea necesario */
+}
+
+.fa-facebook:hover {
+  background-color: RGB(59, 89, 152);
+  color: white;
+}
+
+.fa-linkedin:hover {
+  background-color: RGB(0, 119, 181);
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(to bottom, #d111d1, #eb0027);
+  color: white;
+}
+
+.fa-tiktok:hover {
+  background-color: black;
+  color: white;
+}
+
+.fa-telegram:hover {
+  background-color: rgb(0, 136, 204);
+  color: white;
+}
+
+.logo {
+  width: 22%;
+}
+
+.Footer .logo {
+  width: 20%;
+}
+
+.header .btn {
+  width: 50%;
+}
+
+.Contacto .btn {
+  width: 25%;
+}
+
+.Contacto .contactos {
+  text-align: center;
+}
+
+.logoCurso1 {
+  width: 55%;
+  margin-right: 130px;
+}
+
+.logoaecodeCurso1 img {
+  width: 25%;
+}
+
+/*Estilos del slider*/
+.slider {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide {
+  padding-right: 100px;
+}
+
+/* Estilos del slider 1 (de izquierda a derecha) */
+.slider1 {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider1 .slide-track {
+  display: flex;
+  animation: scroll1 60s linear infinite;
+  -webkit-animation: scroll1 60s linear infinite;
+  width: 100%;
+}
+
+@keyframes scroll1 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-80px * 7));
+    transform: translateX(calc(-80px * 7));
+  }
+}
+
+/* Estilos del slider 2 (de derecha a izquierda) */
+.slider2 {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider2 h5 {
+  white-space: nowrap;
+}
+
+.slider2 .slide-track {
+  display: flex;
+  animation: scroll2 60s linear infinite;
+  -webkit-animation: scroll2 60s linear infinite;
+  width: 100%;
+}
+
+@keyframes scroll2 {
+  0% {
+    -webkit-transform: translateX(calc(-80px * 7));
+    transform: translateX(calc(-80px * 7));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/*Slider de textos para las palabras clave*/
+.sliderTitulos {
+  display: none;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 10px; /* Ajusta el espaciado entre los elementos según sea necesario */
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ajusta la altura según tus necesidades */
+}
+
+.img-Palabras {
+  margin-top: 20px;
+  max-width: 40%;
+  height: auto;
+}
+
+.slide img {
+  width: 70px;
+}
+
+/*Estilos para el botón de wssp*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1ab152;
+
+  animation: shake 1s;
+
+  animation-iteration-count: infinite;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.formularios .modal,
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.form-control .btn {
+  width: 45%;
+}
+
+.form2 .btn {
+  width: 70%;
+}
+
+/* Estilo para el contenido del formulario */
+.formularios .modal-content,
+.modal-content2 {
+  background-color: #fff;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Carrusel de tarjetas*/
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+/*Animacion de la barra de navegación*/
+.navbar {
+  top: -100%;
+  animation: anim1 2s forwards 0s;
+}
+
+@keyframes anim1 {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+/*Animacion de la imagen*/
+.image-container {
+  animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Animacion del botón de wssp y del texto del home*/
+.whatsapp,
+.text-container {
+  animation: slideInFromRight 3s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Define la animación para el botón de WhatsApp */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.whatsapp,
+.titulos {
+  animation: slideUp 2s ease-in-out;
+}
+
+.card {
+  border-radius: 2%;
+  margin: 0 0.9em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  padding: 12px;
+  height: 100%;
+}
+
+.card img {
+  border-radius: 2%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-circle-check {
+  color: #203aa5;
+}
+
+.curso2 .fa-circle-check {
+  color: #3e2c80;
+}
+
+.row p {
+  margin-top: -7px;
+}
+
+.content {
+  border-radius: 0% 0% 7px 7px;
+  margin-top: -4px;
+  border: 1px solid #ccc;
+  background-color: rgba(128, 128, 128, 0.041);
+  border-top: none;
+  padding: 0% 3% 0 3%;
+  height: auto;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.module-content {
+  border-radius: 0% 0% 7px 7px;
+  background-color: #3152a1;
+  color: white;
+  height: auto;
+  border: none;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 1s ease, border 0.5s ease; /* Combinar ambas transiciones */
+}
+
+.module-content .closing {
+  transition: none; /* Elimina la transición al cerrar */
+}
+
+.module-content p {
+  margin-left: 10px;
+}
+
+.fa-caret-down {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.fa-caret-up {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 1px;
+  color: #fdd406;
+}
+
+.fa-angle-down {
+  display: none;
+}
+
+.imgLogo {
+  position: absolute;
+  margin-top: 28%;
+  margin-left: 45%;
+  z-index: 2;
+}
+
+.imgLogo img {
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imgLogo1 {
+  position: absolute;
+  margin-top: 29%;
+  margin-left: 32%;
+  z-index: 2;
+}
+
+.imgLogo1 img {
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 4px;
+  width: 25px;
+  height: 25px;
+  margin-right: 4px;
+  margin-bottom: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content3 {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 4%;
+  width: 92%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.miModal {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.content .fa-tag {
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+
+.modCont {
+  margin-left: 8%;
+}
+
+.modCont2 {
+  margin-left: 5%;
+}
+
+.modCont3 {
+  margin-top: -3%;
+  margin-right: -2%;
+}
+
+.modCont3 a {
+  display: inline-block;
+  padding: 5px;
+  padding-right: 8px;
+  background-color: white; /* Color de fondo */
+  color: #203aa5; /* Color del ícono */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.modCont3 a:hover {
+  background-color: #3152a1; /* Cambia el color de fondo al pasar el ratón */
+  color: white; /* Cambia el color del ícono al pasar el ratón */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+}
+
+.modCont3 a i {
+  font-size: 19px; /* Tamaño del ícono */
+  margin-left: 6px;
+}
+
+.cuadroFecha {
+  color: #f3d533;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding-bottom: 0.5%;
+  opacity: 0.94;
+}
+
+.curso4 .cuadroFecha {
+  color: #6aaf2a;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding-bottom: 0.5%;
+  opacity: 0.94;
+}
+
+.cuadroFecha p {
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .Img-Referencia {
+    display: none;
+  }
+}
+
+.CapacitacionesText2 {
+  display: none;
+}
+
+.form2Text2 {
+  display: none;
+}
+
+.CursoBeneficios {
+  border-radius: 0% 0% 7px 7px;
+  margin-top: -4px;
+  border: 1px solid #ccc;
+  background-color: #cccccc33;
+  border-top: none;
+  padding: 0% 3% 0 3%;
+  height: auto;
+  width: 98%;
+}
+
+.CursoBeneficios2 {
+  display: none;
+}
+
+.CapacitacionesTitulo2 {
+  display: none;
+}
+
+.contactoText1 {
+  display: none;
+}
+
+.logoFooterHome {
+  width: 25%;
+}
+
+.slider0 .slidePersonalizado img {
+  width: 120px;
+}
+
+.contactTitle1 {
+  display: none;
+}
+
+.swiper-wrapper .swiper-pagination {
+  padding-bottom: 7%;
+}
+
+.modCont p {
+  font-size: 19px;
+}
+
+.checkBox input {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+
+.checkBox label {
+  margin-top: 10px;
+}
+
+.elementosIzquierda {
+  padding-left: 25%;
+}
+
+.contenedorPreciosMod .texto {
+  padding-right: 25%;
+}
+
+.textoCupon input {
+  width: 100%;
+  margin-left: 3%;
+  height: 50%;
+}
+
+.form-check-input {
+  background-color: transparent;
+}
+
+.form-check-input:checked {
+  background-color: #203aa5; /* Fondo azul cuando está marcado */
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.form-check-input:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.curso2 .form-check-input:checked {
+  background-color: #3e2c80; /* Fondo azul cuando está marcado */
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.curso2 .form-check-input:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.curso3 .form-check-input:checked {
+  background-color: #0066a6; /* Fondo azul cuando está marcado */
+}
+
+.curso3 .fa-circle-check {
+  color: #0066a6;
+}
+
+.curso3 .fa-circle-check {
+  color: #0066a6;
+}
+
+.curso4 .form-check-input:checked {
+  background-color: #6aaf2a; /* Fondo azul cuando está marcado */
+}
+
+.curso4 .fa-circle-check {
+  color: #6aaf2a;
+}
+
+.curso4 .fa-circle-check {
+  color: #6aaf2a;
+}
+
+.textoCupon .form-control {
+  background-color: transparent; /* Fondo gris por defecto */
+  border-color: #cccccc; /* Color del borde por defecto */
+  font-family: "Plus Jakarta Sans", sans-serif; /* Aplica la fuente 'Plus Jakarta' al texto */
+}
+
+.textoCupon .form-control:checked {
+  background-color: #203aa5; /* Fondo azul cuando está marcado */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
+}
+
+.textoCupon .form-control:focus {
+  box-shadow: none; /* Quita la sombra en el estado de foco */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
+}
+
+.textoCupon .form-control:checked {
+  background-color: #203aa5; /* Fondo azul cuando está marcado */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
+}
+
+.textoCupon .form-control:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none; /* Quita la sombra en el estado de foco */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
+}
+
+.contenedorDescuentos {
+  margin-top: -7px;
+  padding-left: 12%;
+}
+
+.contenedorMetodosP {
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  height: 100%;
+}
+
+.contenedorMetodosP img {
+  width: 28px;
+  border-radius: 5px;
+}
+
+.contenedorMetodosP .bcpBox {
+  background-color: #cccccc41;
+  height: 45px;
+}
+
+.contenedorQrs p {
+  font-size: 15px;
+}
+
+.contenedorQrs .card-img-top {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedorQrs .card {
+  width: 55%;
+  height: 500px;
+  padding-bottom: 10%;
+  margin: auto;
+}
+
+.contenedorYapePlin {
+  padding-top: 5%;
+  height: 410px;
+  margin-inline: 4%;
+  background-image: url("Imagenes/yape\ fondo.png");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  border-radius: 5px;
+}
+
+.contenedorPaypal {
+  padding-top: 5%;
+  height: 410px;
+  margin-inline: 4%;
+  background-image: url("Imagenes/paypal\ fondo.png");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  border-radius: 5px;
+}
+
+.btnGeneral .fa-solid {
+  margin-top: 10px;
+}
+
+.btnGeneral {
+  width: 98%;
+  margin: auto;
+}
+
+.contenedorPreciosMod {
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: 1px solid #203aa5;
+  background-color: #cccccc33;
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contenedorPreciosMod .vertical-line {
+  border-right: 2px solid #c0c1c2; /* Establece el ancho y color de la línea vertical */
+  height: 100%; /* Hace que la línea tenga la misma altura que el contenedorPreciosMod */
+  position: absolute; /* Permite superponer la línea sobre los demás elementos */
+  top: 0; /* Ajusta según sea necesario para alinear con el principio del contenedorPreciosMod */
+  bottom: 0; /* Ajusta según sea necesario para alinear con el final del contenedorPreciosMod */
+  left: 50%; /* Coloca la línea en el medio del contenedorPreciosMod */
+}
+
+.card .imgBlur {
+  filter: blur(2px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 60, 148, 0.15); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #203aa5; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px;
+}
+
+.overlayModuleCompleted {
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: #0066a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayModuleCompleted .btnModules {
+  display: none;
+}
+
+.overlay h5 {
+  font-size: 17px;
+}
+
+.col-md-3:hover .btnModules {
+  display: block;
+  /* Posicionamiento y estilos adicionales para el botón */
+}
+
+.col-md-4:hover .btnModules {
+  display: block;
+  /* Posicionamiento y estilos adicionales para el botón */
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slider-content span {
+  display: none;
+}
+
+.slider-content span:first-child {
+  display: block;
+}
+
+.slider-content.active span {
+  display: block;
+}
+
+.curso2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 44, 128, 0.2); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3e2c80; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px;
+}
+
+.curso3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 96, 155, 0.2); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0066a6; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px;
+}
+
+.curso4 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d813f; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px;
+}
+
+.card-body .btn {
+  padding-inline: 7%;
+}
+
+.curso1 .carousel,
+.curso2 .carousel,
+.curso3 .carousel,
+.curso4 .carousel {
+  display: none;
+}
+
+.contenedorModulos {
+  display: flex;
+}
+
+.course-modality,
+.brochure-button {
+  width: fit-content;
+  padding: 4px 30px;
+  margin-inline: auto;
+  margin-block: 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  font-family: "ruberoid";
+  color: white;
+  font-size: 11px;
+}
+
+.brochure-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.curso1 .course-modality,
+.curso1 .brochure-button {
+  border: #203aa5;
+  background-color: #203aa5;
+}
+
+.curso2 .course-modality,
+.curso2 .brochure-button {
+  border: #380489;
+  background-color: #380489;
+}
+
+.curso3 .course-modality,
+.curso3 .brochure-button {
+  border: #0066a6;
+  background-color: #0066a6;
+}
+
+.curso4 .course-modality,
+.curso4 .brochure-button {
+  border: #6aaf2a;
+  background-color: #6aaf2a;
+}
+
+.curso5 .course-modality,
+.curso5 .brochure-button {
+  border: #188cc6;
+  background-color: #188cc6;
+}
+
+.contenedorModulos .col-md-3 {
+  padding: 0 0.8em;
+}
+
+.contenedorModulos .card {
+  height: 90%;
+}
+
+.btnModules {
+  position: absolute;
+  width: 55%;
+  bottom: 5%;
+  font-size: 12px;
+}
+
+.moduleTitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.grupoInversionMovil {
+  display: none;
+}
+
+.brochure-buttom {
+  width: 700px;
+}
+
+.details-container {
+  margin-inline: auto;
+  width: 1320px;
+}
+
+.details-container img {
+  width: 650px;
+}
+
+/*Responsividad*/
+@media (max-width: 1200px) {
+  .formularios .modal-content,
+  .modal-content2 {
+    width: 80%;
+  }
+
+  .header .btn {
+    width: 65%;
+  }
+
+  /*3 palabras clave*/
+  .titulos h3 {
+    font-size: 18px;
+  }
+
+  .Capacitaciones h2 {
+    margin-inline: 10%;
+    font-size: 20px;
+  }
+
+  .sliderTitulos h2 {
+    font-size: 20px;
+  }
+
+  .CapacitacionesTitulo {
+    display: none;
+  }
+
+  .CapacitacionesTitulo2 {
+    display: block;
+  }
+
+  .CapacitacionesTitulo2 h2 {
+    font-size: 20px;
+    margin-inline: -10%;
+  }
+
+  .CapacitacionesText {
+    display: none;
+  }
+
+  .CapacitacionesText2 {
+    display: block;
+    margin-top: -8%;
+    margin-bottom: -10%;
+  }
+
+  .Capacitaciones {
+    margin-top: -20%;
+  }
+
+  .carousel .btn {
+    width: 100%;
+  }
+
+  .Contacto h1 {
+    margin-inline: -15%;
+  }
+
+  .Contacto .contactos {
+    text-align: left;
+  }
+
+  .Contacto .btn {
+    width: 100%;
+  }
+
+  .footer-items p {
+    margin-inline: 1%;
+  }
+
+  .footer-items .iconos {
+    font-size: 23px;
+    margin-top: 35px;
+    margin-inline: -5%;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .Footer .logo {
+    width: 40%;
+  }
+
+  .contenedorTitulos {
+    display: none;
+  }
+
+  .sliderTitulos {
+    margin-top: -12%;
+    display: block;
+  }
+
+  .slider2 .slide {
+    padding-right: 75px;
+  }
+
+  .slider3 .slide img {
+    width: 50px;
+  }
+
+  .slider3 .slidePersonalizado img {
+    width: 45px;
+  }
+
+  .slider3 .slide {
+    padding-right: 80px;
+  }
+
+  .slider0 .slide img {
+    width: 67px;
+  }
+
+  .slider0 .slidePersonalizado img {
+    width: 110px;
+  }
+
+  .slider0 .slide {
+    padding-right: 50px;
+  }
+
+  .txtInicialForm {
+    display: none;
+  }
+
+  .txtInicialForm1 {
+    display: block;
+  }
+
+  .form-control .btn {
+    width: 60%;
+  }
+
+  .form2 .btn {
+    width: 100%;
+  }
+
+  .form2Text {
+    display: none;
+  }
+
+  .form2Text2 {
+    display: block;
+    margin-right: -15%;
+    margin-left: -15%;
+    text-align: center;
+  }
+
+  .form2Title {
+    margin-right: -30%;
+    margin-left: -30%;
+  }
+
+  .logoaecodeCurso1 img {
+    width: 45%;
+  }
+
+  .CursoBeneficios1 {
+    display: none;
+  }
+
+  .CursoBeneficios2 {
+    display: block;
+  }
+
+  .sliderTitulos p {
+    text-align: none;
+  }
+
+  .contactoText {
+    display: none;
+  }
+  .contactoText1 {
+    display: block;
+    font-weight: bold;
+  }
+
+  .logoFooterHome {
+    width: 45%;
+  }
+
+  .CourseContent {
+    display: none;
+  }
+
+  .courseDetailsContainer {
+    padding-left: 4%;
+    padding-right: 5%;
+  }
+
+  .contenidoModulo .btn {
+    background-color: #3152a1;
+    width: 100%;
+  }
+
+  .contactTitle {
+    display: none;
+  }
+
+  .contactTitle1 {
+    display: block;
+  }
+
+  .cuadroFecha {
+    margin-top: 3%;
+  }
+
+  .card-body .btn {
+    padding-inline: 0%;
+  }
+
+  .curso1 .carousel,
+  .curso2 .carousel,
+  .curso3 .carousel,
+  .curso4 .carousel {
+    display: initial;
+  }
+  .curso1 .contenedorModulos,
+  .curso2 .contenedorModulos,
+  .curso3 .contenedorModulos,
+  .curso4 .contenedorModulos {
+    display: none;
+  }
+
+  .elementosIzquierda {
+    padding-left: 20%;
+  }
+
+  .contenedorPreciosMod .texto {
+    padding-right: 15%;
+  }
+
+  .textoCupon {
+    margin-top: -17px;
+    width: 30%;
+    margin-left: 3%;
+  }
+
+  .contenedorQrs .col-md-6 {
+    width: 100%;
+  }
+
+  .contenedorQrs .card {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
+  .contenedorPreciosMod .col-md-6 {
+    width: 50%;
+  }
+
+  .contenedorPreciosMod hr {
+    padding-bottom: 1px;
+  }
+
+  .grupoInversionPC {
+    display: none;
+  }
+
+  .grupoInversionMovil {
+    display: block;
+  }
+}

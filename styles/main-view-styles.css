@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "ruberoid-semibold";
+  src: url(/Ruberoid/Ruberoid-SemiBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "ruberoid-bold";
+  src: url(/Ruberoid/Ruberoid-Bold.otf) format("opentype");
+}
+
+h3 {
+  color: var(--Morado-4, #2a1d68);
+  font-family: "Plus Jakarta Sans";
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
+.main-container {
+  max-width: 1440px;
+  height: 100vh;
+  margin-inline: auto;
+  background-image: url("https://github.com/Sthepen-EA/Media-files/blob/main/aecode-1-landing-page/model-view-bg.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1070px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header-container {
+  padding: 21px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-buttons {
+    display: flex;
+    gap: 30px;
+
+    span {
+      color: var(--Morado-4, #2a1d68);
+      font-family: "Plus Jakarta Sans";
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+}
+
+.aecode-logo {
+  width: 265px;
+}
+
+.button {
+  display: inline-flex;
+  height: 38px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: var(--Morado-3, #381187);
+  box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+  color: var(--Blanco, #fff);
+  font-family: "ruberoid-semibold";
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 1027px) 1fr;
+  margin-block: 30px;
+}
+
+.aside-collaborators {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-inline: auto;
+}
+
+.first-aside {
+  .first,
+  .third {
+    margin-inline-start: 70px;
+  }
+
+  .second,
+  .fourth {
+    margin-inline-end: 70px;
+  }
+}
+
+.second-aside {
+  .first,
+  .third {
+    margin-inline-end: 70px;
+  }
+
+  .second,
+  .fourth {
+    margin-inline-start: 70px;
+  }
+}
+
+.collaborator-item {
+  width: 100px; /* You can adjust the size as needed */
+  height: 100px;
+  transition: transform 1s ease, opacity 1s ease, visibility 0s 1s;
+}
+
+.collaborator-item.show {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.collaborator-item.hide {
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.collaborator-item.fade-out {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.coming-soon-container {
+  max-width: 1027px;
+  height: 821px;
+  padding: 23px 27px 0px 28px;
+  text-align: center;
+  border-radius: 15px;
+  background: var(--Blanco, #eef3f8);
+  box-shadow: -12px 1px 40.7px 1px rgba(0, 0, 0, 0.25);
+
+  .coming-soon-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-inline: auto;
+  }
+
+  h1 {
+    color: var(--Negro, #000);
+    font-family: "ruberoid-bold";
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      display: flex;
+      width: 100%;
+      height: 44px;
+      padding: 6px 17px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 6px;
+      border: 1px solid #381187;
+      color: var(--Morado-4, #2a1d68);
+      font-family: "Plus Jakarta Sans";
+      font-size: 20px;
+      background-color: #eef3f8;
+    }
+  }
+}
+
+.footer-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+
+    .fab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36.9px;
+      height: 36.9px;
+      font-size: 22px;
+      color: white;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .fa-linkedin {
+      background: linear-gradient(336deg, #069 11.4%, #058ccf 96.83%);
+    }
+
+    .fa-instagram {
+      background: linear-gradient(
+        180deg,
+        #fca759 -3.12%,
+        #e82d56 17.47%,
+        #a22db4 77.07%,
+        #643dce 105.24%
+      );
+    }
+
+    .fa-whatsapp {
+      background: linear-gradient(336deg, #138f49 11.4%, #82fbb7 96.83%);
+    }
+
+    .fa-tiktok {
+      background: black;
+    }
+
+    .fa-youtube {
+      background: linear-gradient(336deg, #db0505 11.4%, #f00 96.83%);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    height: 100%;
+    padding: 59px 9px 11px 9px;
+  }
+
+  .background-video {
+    height: 820px;
+  }
+
+  .header-container {
+    padding: 0px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 27px;
+
+    .header-buttons {
+      gap: 15px;
+
+      span {
+        font-size: 14px;
+        display: none;
+      }
+
+      a {
+        font-size: 12px;
+      }
+
+      a:last-child {
+        width: 161px;
+        color: transparent; /* Oculta el texto del último enlace */
+        position: relative;
+
+        &::after {
+          color: white;
+          content: "PROGRAMAS";
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .aecode-logo {
+    width: 127px;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+
+    .coming-soon-container {
+      width: 100%;
+      height: auto;
+      margin-inline: auto;
+      padding: 11px 11px 27px;
+
+      h1 {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      h3 {
+        font-size: 13.8px;
+        color: #000;
+      }
+    }
+
+    .aside-collaborators {
+      display: none;
+    }
+
+    .second-aside {
+      display: flex;
+      flex-direction: row;
+      gap: 54px;
+
+      .collaborator-item {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+      }
+
+      .first,
+      .third {
+        margin-top: 34px;
+      }
+    }
+
+    .form-container {
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        font-size: 14px;
+
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-container {
+    display: none;
+  }
+}

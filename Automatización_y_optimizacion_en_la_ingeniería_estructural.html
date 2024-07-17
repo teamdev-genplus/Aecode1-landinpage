@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Curso de Automatización y optimización en la ingeniería estructural -
+      AECODE
+    </title>
+    <!--Conexión para el uso de bootstrap 5-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--Estilo de letra de google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Onest:wght@500&family=Plus+Jakarta+Sans:wght@200&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Para los íconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Estilos-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Scripts-->
+    <script src="scripts.js"></script>
+    <script src="carrusel.js"></script>
+
+    <!--Ícono de navegador-->
+    <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
+    <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0JS1DX7KR0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0JS1DX7KR0");
+    </script>
+  </head>
+  <body
+    class="curso1"
+    background="Imagenes/Curso1Fondo.png"
+    style="background-size: cover"
+  >
+    <!--CURSO1-->
+    <!--Cabecera-->
+    <div class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a
+          href="/aecode-programas.html#Home"
+          class="navbar-brand fs-3 pb-2 ms-auto"
+          ><img
+            src="/Imagenes/aecode-logo.png"
+            alt=""
+            class="img-fluid logo text-align"
+        /></a>
+        <button
+          id="botonHamburguesa"
+          class="navbar-toggler"
+          style="position: absolute; right: 10%; top: 20%"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/aecode-programas.html#Home" class="nav-link mt-2"
+                ><strong>Inicio</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/aecode-programas.html#Capacitaciones"
+                class="nav-link mt-2"
+                ><strong>Capacitaciones</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/aecode-programas.html#Contáctanos" class="nav-link mt-2"
+                ><strong>Contáctanos</strong></a
+              >
+            </li>
+            <li class="nav-item mt-1">
+              <a
+                href="/BIM_Modeling_for_Bridges_with_Autodesk_Revit_and_Dynamo.html"
+                class="nav-link nav-link-icon"
+                ><i class="fa-solid iconoHeader fa-earth-americas"></i
+                ><span class="icon-text"><strong>ES</strong></span></a
+              >
+            </li>
+            <li class="nav-item mt-2">
+              <div class="slide">
+                <button
+                  type="button"
+                  onclick="mostrarFormulario()"
+                  class="btn btn-primary"
+                  style="background-color: #380489; border: #380489"
+                >
+                  Registrate
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Botón de whatsapp-->
+    <div class="whatsapp1">
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      />
+      <a
+        href="https://api.whatsapp.com/send?phone=51900121245"
+        class="float"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    </div>
+    <div class="container courseDetailsContainer" style="margin-bottom: 30px">
+      <!--Título del curso-->
+      <div class="row pt-4">
+        <div class="CourseContent">
+          <div class="row">
+            <h1
+              class="display-5"
+              style="color: #f0f1f2; margin-top: 100px; font-size: 35px"
+            >
+              Automatización y optimización <br />en la ingeniería estructural
+            </h1>
+            <div class="row">
+              <div class="cuadroFecha my-4">
+                <h5 class="pt-3" style="font-size: 20px">Fechas de inicio:</h5>
+                <div class="d-flex">
+                  <h6 class="pe-3" style="color: white">
+                    <span>26/06/2024</span>
+                    <!-- M1: <span id="courseDate1"></span> - M2:
+                    <span id="courseDate2"></span> - M3:
+                    <span id="courseDate3"></span> - M4:
+                    <span id="courseDate4"></span> -->
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Cuerpo del curso-->
+      <div class="row py-1">
+        <!--Objetivo, dirigido a y beneficios del curso-->
+        <div class="col-md-6" style="margin-top: -10px">
+          <div class="row" style="color: #f0f1f2">
+            <p style="color: #f0f1f2; text-wrap: pretty">
+              Descubre el contenido más innovador y moderno, diseñado por 12
+              expertos líderes donde aprenderás de manera sencilla y prácica:
+            </p>
+            <ul style="padding-left: 30px">
+              <li>Criterios y conceptos clave en proyectos estructurales</li>
+              <li>
+                Casos de aplicación y experiencias en automatización de procesos
+                mediante el uso de APIs y la programación con Python y C#
+              </li>
+              <li>
+                Técnicas para el desarrollo de herramientas GUI y aplicaciones
+                web
+              </li>
+              <li>Diseño computacional, paramétrico y generativo</li>
+              <li>Optimización estructural con algoritmos heurísticos</li>
+              <li>Interoperabilidad BIM-Estructural</li>
+              <li>
+                Inteligencia artificial e investigación aplicada a proyectos
+                estructurales y más
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Imagen de referencia y módulos del curso-->
+        <div class="col-md-6">
+          <!--Logos de lenguajes claves-->
+          <!-- Imagen de referencia -->
+          <div
+            class="Img-Referencia mb-5"
+            style="position: absolute; right: 0px; top: 269px"
+          >
+            <!-- <div class="imgLogo1">
+              <img src="Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
+              <img src="/Softwares/logo_revit.png" alt="" />
+              <img
+                style="width: 30px"
+                src="/Softwares/logo_sofistik.png"
+                alt=""
+              />
+              <img src="/Softwares/dynamoLogo.png" alt="" />
+              <img src="Lenguajes_Plugins/Python-logo-notext.svg.png" alt="" />
+            </div> -->
+            <img
+              class="Img-Referencia"
+              style="
+                width: auto;
+                height: 425px;
+                margin-top: -201px;
+                height: 570px;
+                opacity: 0.75;
+              "
+              src="/Imagenes/auto y opti.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Apartado de: Beneficios e Inversión-->
+    <section class="bg-white py-5">
+      <div class="container">
+        <div class="row pb-4">
+          <button
+            class="btn m-auto d-flex justify-content-between"
+            style="
+              width: 98%;
+              color: white;
+              background-color: #203aa5;
+              margin-bottom: 4px;
+            "
+            onclick="toggleContent('CursoBeneficios', 'angleUp', 'angleDown')"
+          >
+            <h5 class="pt-2" style="padding-left: 28px">BENEFICIOS</h5>
+            <div class="mt-2" style="padding-right: 28px">
+              <i id="angleUp" class="fa-solid fa-angle-up"></i>
+              <i id="angleDown" class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
+          <div id="CursoBeneficios" class="CursoBeneficios m-auto">
+            <div class="CursoBeneficios1">
+              <p style="margin-top: 20px">
+                <i class="fa-solid fa-circle-check"></i> 12 Instructores +
+                invitados especiales con amplia experiencia en proyectos y
+                automatización en la ingeniería estructural
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> 50 horas de sesiones en
+                vivo + 3 sesiones bonus
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> 12 casos de aplicación
+                desarrollados
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> 3 certificaciones
+                digitales
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                Acceso a material educativo, guías, papers, scripts, así como
+                ejemplos prácticos proporcionados por los instructores expertos
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Acceso a la base de
+                datos de empresas en convenio con AECODE
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Al participar del
+                programa te conviertes en miembro de la comunidad exclusiva
+              </p>
+
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Entrega dePRECIOS ING.
+                ESTRUCTURAL
+                <a
+                  href="#!"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCertificate"
+                  ><strong>certificado</strong></a
+                >
+                por cada módulo completo del curso.
+              </p>
+              <!--Código auxiliar para el modal del certificado-->
+              <div
+                tabindex="-1"
+                aria-labelledby="modalCertificate"
+                aria-hidden="true"
+                class="modal fade"
+                id="modalCertificate"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <img src="Imagenes/aecode-certificate.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="CursoBeneficios2">
+              <p style="margin-top: 10px">
+                <i class="fa-solid fa-circle-check"></i> Aprendizaje práctico
+                desde lo básico hasta avanzado bajo la guía de expertos.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Acceso de por vida a
+                las sesiones grabadas en la nube.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Acceso a nuestra
+                comunidad de profesionales de alta experiencia.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Acceso a una biblioteca
+                de scripts y plantillas exclusivas en Revit y Dynamo.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Entrega de
+                <a
+                  href="#!"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCertificate"
+                  ><strong>certificado</strong></a
+                >
+                por cada módulo completo del curso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Módulos  -->
+
+      <div class="brochure-buttom col-md-6 text-center m-auto mt-5">
+        <a
+          class="btn mb-3"
+          style="
+            background-color: #203aa5;
+            color: white;
+            width: 25%;
+            height: 68%;
+          "
+          target="_blank"
+          href="https://acortar.link/O6h0S6"
+          ><span class="mb-0 mt-0">Ir al brochure</span></a
+        >
+      </div>
+
+      <div class="details-container d-flex">
+        <div class="col-md-6">
+          <button
+            class="btn"
+            style="
+              width: 635px;
+              color: white;
+              background-color: #203aa5;
+              margin-bottom: -16px;
+              margin-inline-start: 10px;
+              border-radius: 10px 10px 0px 0px;
+            "
+          >
+            <h5 class="py-2 text-center">PLAN DE ESTUDIOS</h5>
+          </button>
+          <img
+            src="/Imagenes/Temario_AECODE_AUTOMATIZACION Y OPTIMIZACIÓN EN LA INGENIERÍA ESTRUCTURAL (3) (1).webp"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6">
+          <button
+            class="btn"
+            style="
+              width: 635px;
+              color: white;
+              background-color: #203aa5;
+              margin-bottom: -16px;
+              margin-inline-start: 7px;
+              border-radius: 10px 10px 0px 0px;
+            "
+          >
+            <h5 class="py-2 text-center">INSTRUCTORES</h5>
+          </button>
+          <img
+            src="/Imagenes/Instructores_AECODE_AUTOMATIZACION Y OPTIMIZACIÓN EN LA INGENIERÍA ESTRUCTURAL.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!--INVERSIÓN  -->
+
+      <div id="inversionSection" class="container pb-3 pt-2">
+        <div class="py-3 mt-5">
+          <h2 class="fw-bold">INVERSIÓN</h2>
+          <p class="mb-1">Consulta por:</p>
+          <ul>
+            <li>Descuento por haber llevado algunos de los otros modulos</li>
+            <li>
+              Descuento por participar en alguno de los programas de AECODE
+            </li>
+            <li>
+              Descuento a los perfiles mas interesantes o red de colaboradores
+              de AECODE
+            </li>
+            <li>
+              Becas a estudiantes pertenecientes a asociaciones o empresas con
+              convenio AECODE
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Métodos de pago-->
+      <div class="container">
+        <div class="row mt-3">
+          <button
+            class="btn btnGeneral justify-content-between d-flex"
+            style="color: white; background-color: #203aa5"
+          >
+            <h5 class="pt-2">MÉTODOS DE PAGO</h5>
+          </button>
+        </div>
+        <div class="row d-flex py-4">
+          <div class="col-md-6">
+            <div class="contenedorMetodosP">
+              <h4>
+                <img
+                  src="https://seeklogo.com/images/B/bcp-logo-CCCCDA45A9-seeklogo.com.png"
+                  alt="BCP logo"
+                />
+                Banco de Crédito del Perú
+              </h4>
+              <p class="mt-4">
+                TITULAR: Generative and Optimal Design Solutions SAC
+              </p>
+              <p>RUC: 20611751835</p>
+
+              <div class="row py-1">
+                <h5 class="mb-3">Soles</h5>
+                <div class="col-md-6">
+                  <p style="color: #064b8e">
+                    <strong>N° de cuenta corriente</strong>
+                  </p>
+                  <p class="bcpBox px-2 pt-2">191-1510064-0-71</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="color: #064b8e"><strong>CCI</strong></p>
+                  <p class="bcpBox px-2 pt-2">002-191-001510064071-51</p>
+                </div>
+              </div>
+
+              <div class="row py-1">
+                <h5 class="mb-3">Dólares</h5>
+                <div class="col-md-6">
+                  <p style="color: #064b8e">
+                    <strong>N° de cuenta corriente</strong>
+                  </p>
+                  <p class="bcpBox px-2 pt-2">191-1510382-1-93</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="color: #064b8e"><strong>CCI</strong></p>
+                  <p class="bcpBox px-2 pt-2">002-191-001510382193-58</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contenedorMetodosP">
+              <h4>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAq1BMVEUAv0QALaMAGqgAt00Awz8AI6YAgHoAen4AxjsAxT0AK6QAJ6UAwUEAIqYAKaQAKKUAHqcAF6kAWpAAHKcAo18AuEsAvUUAAK0AU5MAV5EAGKgAgnkAXo4AmWgATpYAplwAPJ0As1AAjnAAY4sAdIIAhnYARpkAaogANaAAlmsAi3MAnWQAOZ4AiXQAMaEAcIQAkW4AqlkAQJsAZooAdoAArlQApF4AboYASpctw3SJAAADPElEQVR4nO3di07iQABGYegFpjdoKSAUEBVRhBVF13Xf/8m2xWxiNi5Wy1xKznkB8+VvR2LC2GgQEREREREREREREREREREREREREZmR44mhrT5VvFDYy942zizVnakhhqI/SqKu31SfpUTo2OOsq0GnTChmcaDJp0YoJok2nxKhXqACoTPTClQgHERagfKFoqfvkFEiDOd6n1H5QjHW9XtQlXCge0LZQmet+ZyRLvSmms8Z6UKx0vFhW6VwqP0hlS0cWLqBsoU2QoQIESI0XugHbmwd/mxfX2EniNJkNW3N7PbBT4Z1FL4Nd/5wNW8Izwm9tntCwmK49GLR2lw6BW7/M5wTEXby4TJ3dH21a3h/bY1TERbDRReLycYW/+DqL9wP1xxdP+4a4gNbvYVdN06Tp+d8OO+j4WotzB/KOG2Ofz7unP8PV1dhPpwV3dwuPx+ufsJiuKQ5bt+9hKWGe5fxQr8Yzs2H6w8+PCo/zWhhJ0qzVe87w73LZGFntO4P892+jdtnstCdiEq2t4wWtpwj/AyECKuFEGGZECKsFkKEZUKIsFoIEZYJIcJqIURYJoQIq4UQYZkQIqwWQoRlQoiwWggRlgkhwmohRFgmhAirhRBhmRAirBZChGVCiLBaCBGWyeTvAVcWho4nGi8Lc7/LXUGY2zzP3kyen+L08DVGNRQWw4W7x+uRb8Vu0DnIq5uwsDmXm8niIkmjz231Eha44fzq4dzP8uG+cvmU+cLCJi5nremPuPxwNRGGxXEynK8fzmPri8OZL3x744rhrG8NZ7Iw3L9xv9avv4MKwxkq3A/3cteebr9wVNZEGDo5btC/f71x8+GOeym2dmExnJcP19umRxzOGOEyH255e5MdfThThP7TKoulDGeKsOkruBlT/60RCBEiPH1hdvJCa3Dqwkgq0AChvxInLgwW3okLo/Ux/upssjCRe9DoFwY9ua+hfmEyP8JNVCYLg6nkCbULXclvoXZhspF7kGoXJkvZz6hmoQqgTmEQbRQA9Qm7SW8g/R3UJvS7UTKeqxiwEJ4p/5+VVrSd3tvHuHKyJFF9Q+EpeT6JiIiIiIiIiIiIiIiIiIiIiIiIiEr0B43EYJsK/tspAAAAAElFTkSuQmCC"
+                  alt="Interbank logo"
+                />
+                Interbank
+              </h4>
+              <p class="mt-4">
+                TITULAR: Generative and Optimal Design Solutions SAC
+              </p>
+              <p>RUC: 20611751835</p>
+
+              <div class="row py-1">
+                <h5 class="mb-3">Soles</h5>
+                <div class="col-md-6">
+                  <p style="color: #00bf44">
+                    <strong>N° de cuenta corriente</strong>
+                  </p>
+                  <p class="bcpBox px-2 pt-2">2003005808845</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="color: #00bf44"><strong>CCI </strong></p>
+                  <p class="bcpBox px-2 pt-2">00320000300580884538</p>
+                </div>
+              </div>
+
+              <div class="row py-1">
+                <h5 class="mb-3">Dólares</h5>
+                <div class="col-md-6">
+                  <p style="color: #00bf44">
+                    <strong>N° de cuenta corriente</strong>
+                  </p>
+                  <p class="bcpBox px-2 pt-2">2003005808852</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="color: #00bf44"><strong>CCI</strong></p>
+                  <p class="bcpBox px-2 pt-2">00320000300580885234</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-3 mt-3 contenedorQrs">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body d-flex">
+                <img
+                  style="
+                    margin-right: 7px;
+                    width: 25px;
+                    height: 28px;
+                    border-radius: 5px;
+                  "
+                  src="https://seeklogo.com/images/Y/yape-logo-3E473EE7E5-seeklogo.com.png"
+                  alt="logo yape"
+                />
+                <h4>Yape /</h4>
+                <img
+                  style="
+                    margin-right: 7px;
+                    margin-left: 15px;
+                    width: 25px;
+                    height: 28px;
+                    border-radius: 5px;
+                  "
+                  src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png"
+                  alt="logo yape"
+                />
+                <h4>Plin</h4>
+              </div>
+              <div class="contenedorYapePlin">
+                <img
+                  src="/Imagenes/qrYape.jpeg"
+                  class="card-img-top img-center"
+                  alt="Yape QR"
+                />
+                <p
+                  style="
+                    text-align: center;
+                    padding: 3%;
+                    width: 210px;
+                    background-color: #349e98;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 15px;
+                    margin-top: 5px;
+                  "
+                >
+                  <strong>Paga aquí con Yape o Plin</strong>
+                </p>
+
+                <div class="card-body text-center">
+                  <p>Número: +51 900 121 245</p>
+                  <p>Titular: Generative and Optimal Design Solutions SAC</p>
+                  <p>RUC: 20611751835</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body d-flex">
+                <img
+                  style="
+                    margin-top: -8px;
+                    margin-right: 1px;
+                    margin-left: -7px;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 5px;
+                  "
+                  src="https://brandlogos.net/wp-content/uploads/2021/11/paypal-logo-512x512.png"
+                  alt="logo paypal"
+                />
+                <h5 class="card-text">Paypal</h5>
+              </div>
+              <div class="contenedorPaypal">
+                <img
+                  src="/Imagenes/qrPaypal.png"
+                  class="card-img-top img-center"
+                  alt="Paypal QR"
+                />
+                <p
+                  style="
+                    text-align: center;
+                    padding: 3%;
+                    width: 210px;
+                    background-color: #27a9e5;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 15px;
+                    margin-top: 5px;
+                  "
+                >
+                  <strong>Paga aquí con Paypal</strong>
+                </p>
+                <div class="card-body text-center">
+                  <p>Número: +51 900 121 245</p>
+                  <p>Titular: Generative and Optimal Design Solutions SAC</p>
+                  <p>RUC: 20611751835</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Pie de página-->
+    <section class="Footer bg-light pt-3">
+      <div class="container logoaecodeCurso1">
+        <p class="text-center small text-muted">
+          <img class="logo" src="/Imagenes/aecode-logo.png" alt="" />
+        </p>
+      </div>
+      <div class="container pt-1">
+        <p class="text-center small text-muted">
+          Sponsored by Generative and Optimal Design Solutions SAC
+        </p>
+      </div>
+      <div class="container pb-2">
+        <p class="text-center small text-muted">Copyright &copy; AECODE 2023</p>
+      </div>
+    </section>
+    <!--Formularios-->
+    <div class="formularios">
+      <div id="miModal" class="modal">
+        <div class="modal-content">
+          <!-- Formulario oculto por defecto -->
+          <div class="row g-5 py-4">
+            <form
+              id="form"
+              method="post"
+              class="form-control form1 text-center px-5 position-relative"
+              onsubmit="mostrarFormulario2(); return false;"
+            >
+              <div class="position-absolute top-0 end-0">
+                <button
+                  type=""
+                  class="close btnText"
+                  onclick="cerrarFormulario()"
+                >
+                  X
+                </button>
+              </div>
+              <div class="">
+                <h5 class="fw-bold display-6 py-3">
+                  ¡Únete a la comunidad AECODE!
+                </h5>
+                <p class="text-muted text-secondary">
+                  Ingresa tu nombre y correo electrónico, para recibir
+                  información sobre nuestros cursos y mucho más!
+                </p>
+              </div>
+              <div class="mb-3 mt-3">
+                <input
+                  type="text"
+                  required
+                  class="form-control input"
+                  placeholder="Nombre y apellido"
+                  name="Client Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  required
+                  class="form-control input"
+                  placeholder="Correo electrónico"
+                  name="Email"
+                />
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  id="submit-button"
+                  class="btn btn-primary px-4"
+                  style="background-color: #380489; border: #380489"
+                >
+                  <strong>Enviar</strong>
+                </button>
+              </div>
+              <div>
+                <p class="small text-muted pt-3">
+                  Al enviar tus datos, aceptas recibir información sobre
+                  noticias, promociones, productos y servicios de AECODE.ai.
+                </p>
+              </div>
+              <div>
+                <p class="small text-muted">¡Bienvenido!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="miModal2" class="modal2">
+        <div class="modal-content2">
+          <!-- Formulario oculto por defecto -->
+          <div class="row g-5 py-4">
+            <form
+              id="form2"
+              method="post"
+              class="form-control form2 text-center px-5 position-relative"
+            >
+              <div class="position-absolute top-0 end-0">
+                <!-- Ajusta la posición del contenedor del botón -->
+                <button
+                  type="button"
+                  class="close2 btnText"
+                  onclick="cerrarFormulario2()"
+                >
+                  X
+                </button>
+              </div>
+              <div class="">
+                <div class="form2Title">
+                  <h5 class="fw-bold display-6 py-3">
+                    ¡Bienvenido a <br />
+                    la comunidad AECODE!
+                  </h5>
+                </div>
+                <div class="form2Text">
+                  <p class="text-muted text-secondary">
+                    Estamos contentos de contar contigo, en unos instantes
+                    recibirás un correo de confirmación. Con esto podrás acceder
+                    a la información de cursos, novedades y mucho más. Si
+                    quieres pertenecer a una comunidad de networking más
+                    exclusiva:
+                  </p>
+                </div>
+                <div class="form2Text2">
+                  <p class="text-muted text-secondary">
+                    En unos instantes recibirás un correo de confirmación para
+                    acceder a novedades y mucho más. <br />
+                    Si quieres pertenecer a una comunidad más exclusiva:
+                  </p>
+                </div>
+              </div>
+              <div class="text-center">
+                <a
+                  href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
+                  target="_blank"
+                  class="btn btn-primary px-4"
+                  style="
+                    background-color: #380489;
+                    border: #380489;
+                    color: white;
+                  "
+                >
+                  <strong>¡Únete al grupo de Whatsapp!</strong>
+                </a>
+              </div>
+              <div>
+                <p class="text-muted pt-3">¡Bienvenido!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
+    <!--Script para el envío de correos-->
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbwdd6JcjH_A2YeWML1woNBJYkStYKdnwI-M9HN1sRl5NuW_7qartpsquZ1IO-jOl4Waqg/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+    <!--Script para el desplegable-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Obtén el elemento del botón del menú desplegable
+        var navbarToggle = document.querySelector(".navbar-toggler");
+
+        // Obtén la lista de elementos del menú
+        var navbarNav = document.querySelector("#navbarNavDropdown");
+
+        // Agrega un evento al hacer clic en el botón
+        navbarToggle.addEventListener("click", function () {
+          // Verifica si la lista está desplegada
+          if (navbarNav.classList.contains("show")) {
+            // Si está desplegada, ciérrala
+            navbarNav.classList.remove("show");
+          }
+        });
+
+        // Agrega eventos a los elementos del menú para cerrar el menú cuando se hace clic en ellos
+        var navbarItems = document.querySelectorAll(".navbar-nav .nav-item");
+
+        navbarItems.forEach(function (item) {
+          item.addEventListener("click", function () {
+            // Verifica si la lista está desplegada
+            if (navbarNav.classList.contains("show")) {
+              // Si está desplegada, ciérrala
+              navbarNav.classList.remove("show");
+            }
+          });
+        });
+        navbarNav.style.marginLeft = "6%";
+      });
+    </script>
+
+    <script src="automaticDate.js"></script>
+    <!--Script para el uso de bootstrap 5-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
